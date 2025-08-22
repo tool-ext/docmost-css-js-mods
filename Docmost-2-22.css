@@ -3,7 +3,58 @@
 }
 html[data-mantine-color-scheme="dark"] {
 	--link-color: rgb(91, 149, 243) !important;
+	--table-border-color: var(--mantine-color-dark-5) !important;
 }
+
+
+
+
+/*
+
+██   ██ ███████  █████  ██████  ███████ ██████  
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+███████ █████   ███████ ██   ██ █████   ██████  
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
+                                                
+       
+*/
+
+
+/*
+
+Border Bottom Width
+Was 1px, but I wanted to make it thinner. Looks better thinner. 
+
+*/
+.mantine-AppShell-header {
+	border-bottom-width: .5px !important;
+}
+
+
+
+
+/*
+
+███████ ██   ██  █████  ██████  ███████ ██████      ██    ██ ██ ███████ ██     ██ 
+██      ██   ██ ██   ██ ██   ██ ██      ██   ██     ██    ██ ██ ██      ██     ██ 
+███████ ███████ ███████ ██████  █████   ██   ██     ██    ██ ██ █████   ██  █  ██ 
+     ██ ██   ██ ██   ██ ██   ██ ██      ██   ██      ██  ██  ██ ██      ██ ███ ██ 
+███████ ██   ██ ██   ██ ██   ██ ███████ ██████        ████   ██ ███████  ███ ███  
+                                                                                  
+                                                                                  
+
+
+*/
+
+body header .mantine-UnstyledButton-root {
+	margin-top: -4px !important;
+}
+
+body div[data-mantine-shared-portal-node="true"] .mantine-Affix-root {
+	display: none !important;
+}
+
 
 /* 
 HIDE AVATRAS ON SPACES
@@ -20,9 +71,17 @@ HIDE AVATRAS ON SPACES
 
 
 /*
+
+██████  ██████   ██████  ███████ ███████ ███    ███ ██ ██████  ██████   ██████  ██████  
+██   ██ ██   ██ ██    ██ ██      ██      ████  ████ ██ ██   ██ ██   ██ ██    ██ ██   ██ 
+██████  ██████  ██    ██ ███████ █████   ██ ████ ██ ██ ██████  ██████  ██    ██ ██████  
+██      ██   ██ ██    ██      ██ ██      ██  ██  ██ ██ ██   ██ ██   ██ ██    ██ ██   ██ 
+██      ██   ██  ██████  ███████ ███████ ██      ██ ██ ██   ██ ██   ██  ██████  ██   ██ 
+                                                                                        
+                                                                                        
 Had to turn off Border-Bottom since I think this is what Docmost tries to do
 */
-.mantine-AppShell-main .mantine-Container-root a {
+.ProseMirror a {
 	color: var(--link-color) !important;
 	font-weight: 600 !important;
 	opacity: .85 !important;
@@ -36,20 +95,62 @@ Had to turn off Border-Bottom since I think this is what Docmost tries to do
 	border-bottom: none !important;
 }
 
-.mantine-AppShell-main .mantine-Container-root h2 {
+.ProseMirror table td, .ProseMirror table th{
+	border: 1px solid var(--table-border-color) !important;
+}
+
+.ProseMirror h2 {
 	margin-bottom: 10px !important;
 }
-.mantine-AppShell-main .mantine-Container-root h3 {
-	margin-bottom: 10px !important;
+.ProseMirror h3 {
+	margin-top: 25px !important;
+	margin-bottom: 8px !important;
 }
-.mantine-AppShell-main .mantine-Container-root h4 {
-	margin-bottom: 10px !important;
+.ProseMirror h4 {
+	margin-bottom: 8px !important;
 }
 
 .mantine-Container-root a[data-discover="true"][data-underline="never"] {
 	text-decoration: none !important;
 	xborder-bottom-width: 3px !important;
 }
+
+
+
+
+
+/*
+
+██      ███████ ███████ ████████     ███████ ██ ██████  ███████ ██████   █████  ██████  
+██      ██      ██         ██        ██      ██ ██   ██ ██      ██   ██ ██   ██ ██   ██ 
+██      █████   █████      ██        ███████ ██ ██   ██ █████   ██████  ███████ ██████  
+██      ██      ██         ██             ██ ██ ██   ██ ██      ██   ██ ██   ██ ██   ██ 
+███████ ███████ ██         ██        ███████ ██ ██████  ███████ ██████  ██   ██ ██   ██ 
+                                                                                        
+                                                                                        
+
+
+*/
+
+
+/*
+
+Hide the new page since plenty of them everywhere
+
+*/
+#root > div > nav > div > div:nth-child(2) > div > button:nth-child(4) {
+	display: none !important;
+}
+
+
+.mantine-AppShell-navbar div:nth-child(2) > div:nth-child(2) {
+	border-bottom-width: .5px !important;
+	xbackground: red !important;
+}
+
+
+
+
 
 
 
