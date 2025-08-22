@@ -1,0 +1,11 @@
+# Ignore SpecStory auto-save files
+.specstory/
+
+# Ignore Cursor indexing ignore file
+.cursorindexingignore
+
+# macOS system files
+.DS_Store
+
+# Compiled output
+compiled/

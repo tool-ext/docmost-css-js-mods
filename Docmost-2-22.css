@@ -1,0 +1,78 @@
+:root {
+	--link-color: #1266ED !important;
+}
+html[data-mantine-color-scheme="dark"] {
+	--link-color: rgb(91, 149, 243) !important;
+}
+
+/* 
+HIDE AVATRAS ON SPACES
+*/
+.mantine-Avatar-root {
+	display: none !important;
+}
+.mantine-Card-section {
+	display: none !important;
+}
+.mantine-Text-root {
+	margin-top: 0px !important;
+}
+
+
+/*
+Had to turn off Border-Bottom since I think this is what Docmost tries to do
+*/
+.mantine-AppShell-main .mantine-Container-root a {
+	color: var(--link-color) !important;
+	font-weight: 600 !important;
+	opacity: .85 !important;
+
+	text-decoration: underline !important;
+	text-decoration-color: var(--link-color) !important;
+	text-decoration-thickness: 2px !important;
+
+	xborder-bottom: .05em solid var(--mantine-color-dark-2);
+	xborder-bottom: .07em solid #1266ED !important;
+	border-bottom: none !important;
+}
+
+.mantine-AppShell-main .mantine-Container-root h2 {
+	margin-bottom: 10px !important;
+}
+.mantine-AppShell-main .mantine-Container-root h3 {
+	margin-bottom: 10px !important;
+}
+.mantine-AppShell-main .mantine-Container-root h4 {
+	margin-bottom: 10px !important;
+}
+
+.mantine-Container-root a[data-discover="true"][data-underline="never"] {
+	text-decoration: none !important;
+	xborder-bottom-width: 3px !important;
+}
+
+
+
+/*
+I just had this in there when I was trying to get the transitions to work. 
+*/
+.mantine-AppShell-aside {
+
+	xdisplay: block !important;
+	xtransform: none !important;
+	xvisibility: visible !important;
+	xopacity: 1 !important;
+	xwidth: var(--app-shell-aside-width, 16rem) !important; /* adjust if needed */
+	xposition: static !important; /* so it sits in the normal layout */
+	xbackground-color: red !important;
+}
+
+/* ScrollArea wrappers inside */
+.mantine-AppShell-aside .mantine-ScrollArea-viewport,
+.mantine-AppShell-aside .mantine-ScrollArea-content {
+  overflow: visible !important;
+  height: auto !important;
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
