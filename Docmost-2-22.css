@@ -8,7 +8,6 @@ html[data-mantine-color-scheme="dark"] {
 
 
 
-
 /*
 
 ██   ██ ███████  █████  ██████  ███████ ██████  
@@ -151,10 +150,16 @@ Hide the new page since plenty of them everywhere
 
 
 
-
-
-
 /*
+
+ █████  ███████ ██ ██████  ███████ 
+██   ██ ██      ██ ██   ██ ██      
+███████ ███████ ██ ██   ██ █████   
+██   ██      ██ ██ ██   ██ ██      
+██   ██ ███████ ██ ██████  ███████ 
+                                   
+                                   
+
 I just had this in there when I was trying to get the transitions to work. 
 */
 .mantine-AppShell-aside {
